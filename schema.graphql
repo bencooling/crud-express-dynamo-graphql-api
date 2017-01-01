@@ -1,0 +1,22 @@
+type Artifact {
+  name: String!
+  location: String!
+  date: String!
+  significance: String!
+}
+input ArtifactInput {
+  name: String!
+  location: String!
+  date: String!
+  significance: String!
+}
+
+type Query {
+  # # read
+  # request for single resource
+  read(name: String!): Artifact
+  list: [Artifact]!
+}
+type Mutation {
+  create(artifcat: ArtifactInput!): Artifact
+}
