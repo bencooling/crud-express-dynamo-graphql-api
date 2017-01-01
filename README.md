@@ -1,11 +1,8 @@
-# c
+# dynamo-graphql-api
 
 > Basic CRUD API with graphql & dynamodb (No resource ids!)
 
-stack: express + graphql + grahpiql + dynamodb
-
-
-## About
+- stack: express + graphql + grahpiql + dynamodb
 - Creates & seeds dynamodb table on Biblical artifacts from scraped wikipedia.  
 - GUI for interfacing with dynamodb and graphql.  
 - Provides CRUD API: create, read, update, delete & list.  
@@ -74,3 +71,7 @@ curl -XPOST -H "Content-Type:application/graphql"  -d 'mutation {
   }
 }' http://localhost:3000
 ```
+
+## TODO
+- [] update
+- [] delete
