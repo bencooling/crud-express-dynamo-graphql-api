@@ -15,6 +15,7 @@ stack: express + graphql + grahpiql + dynamodb
 
 ```
 npm i
+mv .env.sample .env
 npm run dynamodb
 migrate up
 npm start
